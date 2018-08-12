@@ -1,0 +1,32 @@
+<div fxLayout="row" fxLayoutAlign="right start" class="height-full pad-t-xl">
+    <div fxLayout="column">
+        <md-card class="gene-login-wrapper">
+        <img src="assets/img/QCFI-1.jpg" alt="Image 1"/>
+        <img src="assets/img/QCFI-2.jpg" alt="Image 2"/>
+
+        </md-card>
+    </div>
+    <div fxLayout="column" fxFlex.xl="30" fxFlex.lg="30" fxFlex.md="60" fxFlex.sm="70" fxFlex.xs="100">
+        <md-card class="gene-login-wrapper">
+            <div>
+                <div fxLayout="column" fxLayoutAlign="center center mrgn-b-md">
+                    <div class="login-logo justify-content">
+                        <img src="assets/img/ccqclogo1.png" />
+                    </div>
+                </div>
+                <form #form="ngForm" (ngSubmit)="login()">
+                    <div fxLayout="column" fxLayoutAlign="start stretch">
+                        <md-input-container class="mrgn-b-md">
+                            <input mdInput placeholder="E-Mail" type="text" name="email" required [(ngModel)]="email">
+                        </md-input-container>
+                        <md-input-container class="mrgn-b-md">
+                            <input mdInput placeholder="Password" type="password" name="password" required [(ngModel)]="password">
+                        </md-input-container>
+                        <button class="mat-green" md-raised-button [disabled]="!form.valid">SIGN IN</button>
+                        <p class="text-center">Don't have an account? <a [routerLink]="['/register']" class="mat-text-primary">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+        </md-card>
+    </div>
+</div>
