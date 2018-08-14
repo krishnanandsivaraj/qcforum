@@ -6,6 +6,7 @@ import { MainComponent }   from './main/main.component';
 
 import { LoginComponent }  from './session/login/login.component';
 import { RegisterComponent }  from './session/register/register.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes: Routes = [
 	{	
@@ -15,14 +16,14 @@ const appRoutes: Routes = [
 		path: 'session/register',
 		component: RegisterComponent,
 	},{
-		path:'',
+		path:'login',
 		component:LoginComponent
 	}
 	,{
-	 	path: 'dashboard',
+	 	path: '',
 	 	component: MainComponent,
 	 	children: [
-			{ path: '', component: LoginComponent }
+			{ path: '', component: DashboardComponent }
 	 	]
   	}
 ];
