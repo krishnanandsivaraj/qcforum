@@ -19,7 +19,7 @@ export class DashboardComponent  implements OnInit{
     constructor(private pageTitleService: PageTitleService) {}
 
     ngOnInit() {
-      this.pageTitleService.setTitle("Form Wizard");
+      this.pageTitleService.setTitle("User DashBoard");
     }
 
 

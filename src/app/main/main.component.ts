@@ -46,6 +46,7 @@ export class MainComponent implements OnInit, OnDestroy{
         const browserLang: string = translate.getBrowserLang();
         translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');
         breadcrumbService.addFriendlyNameForRoute('/dashboard', 'Dashboard');
+        breadcrumbService.addFriendlyNameForRoute('/team', 'Team Details');
      
     }
 

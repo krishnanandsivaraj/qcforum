@@ -24,6 +24,8 @@ import { PageTitleService } from './core/page-title/page-title.service';
 import { LoginComponent } from './session/login/login.component';
 import { RegisterComponent } from './session/register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { AdminComponent } from './admin/admin.component';
+import { TeamdetailsComponent } from './teamdetails/teamdetails.component';
 
 
 export function createTranslateLoader(http: Http) {
@@ -60,7 +62,9 @@ const perfectScrollbarConfig: PerfectScrollbarConfigInterface = {
 		MainComponent,
 		LoginComponent,
 		RegisterComponent,
-		DashboardComponent
+		DashboardComponent,
+		AdminComponent,
+		TeamdetailsComponent
 	],
 	bootstrap: [GeneAppComponent],
 	providers: [

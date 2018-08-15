@@ -17,20 +17,16 @@ export interface Menu {
 const MENUITEMS = [
   {
     state: 'dashboard',
-    name: 'DASHBOARD',
-    type: 'sub',
-    icon: 'explore',
-    children: [
-      {state: 'dashboard-v1', name: 'DASHBOARD 1'},
-      {state: 'dashboard-v2', name: 'DASHBOARD 2'},
-    ]
+    name: 'dashboard',
+    type: 'link',
+    icon: 'explore'
    },
-  //, {
-  //   state: 'file-manager',
-  //   name: 'File Manager ',
-  //   type: 'link',
-  //   icon: 'folder'
-  // },
+  {
+    state: 'team',
+    name: 'Team Details ',
+    type: 'link',
+    icon: 'grade'
+  },
   // {
   //   state: 'inbox',
   //   name: 'INBOX',
